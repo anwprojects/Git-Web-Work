@@ -13,9 +13,9 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6em;
-  color: #222;
+  font-weight: 600;
+  line-height: 1.5em;
+  /*color: #222;*/
 }
 
 /* Container with max width */
@@ -29,7 +29,7 @@ body {
 .site-header {
   position: sticky;
   top: 0px !important;
-  background: #636b73;
+  background: #333333;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 13px 0;
@@ -41,17 +41,12 @@ body {
   align-items: center;
 }
 
-/*.logo {
-  font-size: 21px;
-  font-weight: bold;
-}*/
-
 /* Call icon style */
 .call-icon {
-  border: 1px solid #eeeeee;
+  border: 1px solid #fff;
   border-radius: 50%;
   padding: 8px;
-  color: #eeeeee;
+  color: #fff;
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
   width: 40px;
@@ -62,22 +57,35 @@ body {
   cursor: pointer;
 }
 .call-icon:hover {
-  background: #eeeeee;
-  color: #bbbbbb;
+  background: #fff;
+  color: #333333;
 }
 
 /* ========== Hero Section ========== */
 .hero {
-  background: #e9ecff;
+  background: #fff;
   padding: 34px 13px;
   text-align: center;
-  color: #353a3e;
+  color: #868686;
 }
+
 .hero-content h1 {
+  font-family: 'Jost', sans-serif !important;
+  color: #292929;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 1.2em;
   margin-bottom: 13px;
   font-weight: 700;
+}
+
+.sm-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  color: #ABCA37;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 
 .hero-content p {
@@ -92,7 +100,7 @@ body {
 /* Section-specific background images */
 /* Parallax Section 1 */
 .section-1 {
-  background-image: url('images/bg1.jpg');
+  background-image: url('images/green-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -101,7 +109,7 @@ body {
 
 /* Parallax Section 2 */
 .section-2 {
-  background-image: url('images/bg2.jpg');
+  background-image: url('images/yellow-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -110,7 +118,7 @@ body {
 
 /* Parallax Section 3 */
 .section-3 {
-  background-image: url('images/bg3.jpg');
+  background-image: url('images/red-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -127,6 +135,15 @@ body {
   /*background: rgba(255, 255, 255, 0.8);*/
   padding: 21px;
   border-radius: 0;
+  color: #04471c;
+}
+
+.text-red {
+  color: #fff !important;
+}
+
+.text-yellow {
+  color: #000 !important;
 }
 
 /* Image on left */
@@ -143,12 +160,18 @@ body {
 }
 
 .parallax-text h2 {
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 13px;
-  font-weight: 700;
-  color: #222;
+  font-family: 'Just Another Hand', cursive;
+  letter-spacing: 1px;
+  font-size: 54px;
+  line-height: 0.5em;
+  margin-bottom: 24px;
+  font-weight: 500;
 }
+
+.sub-title {
+  margin-bottom: 13px;
+}
+
 .parallax-text p {
   font-size: 16px;
   font-weight: 400;
@@ -156,7 +179,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.sub-title {
+h4 {
   margin-bottom: 13px;
   font-weight: bold;
   font-style: italic;
@@ -164,7 +187,7 @@ body {
 
 /* ========== Footer ========== */
 .site-footer {
-  background: #4a5259;
+  background: #21616a;
   color: #fff;
   padding: 34px 13px;
 }
@@ -259,7 +282,8 @@ body {
 /* ========== Download Section (Before Footer) ========== */
 /* Download Section */
 .download-section {
-  background: #b0b8b4; /* match your design color */
+  background: #abca37; /* match your design color */
+  background-image: url(images/download-bg.png);
   padding: 34px 0;
 }
 
@@ -277,35 +301,35 @@ body {
 .download-content h3 {
   font-size: 25px;
   line-height: 30px;
-  font-weight: 600;
-  color: #1f2933;
+  font-weight: 500;
+  color: #fff;
 }
 
 /* Button Style */
 .download-btn {
   display: inline-block;
   padding: 10px 21px;
-  background-color: #4a5259;
+  background-color: #abca37;
   font-size: 18px;
   color: #fff;
   font-weight: normal;
   text-decoration: none;
   border-radius: 55px;
   transition: background-color 0.3s ease;
-  border: 1px solid #b0b8b4;
+  border: 1px solid #fff;
 }
 
 .download-btn:hover {
-  background-color: #b0b8b4;
-  color: #4a5259;
-  border: 1px solid #4a5259;
+  background-color: #fff;
+  color: #abca37;
+  border: 1px solid #fff;
 }
 
 /* ========== Post-Footer Section ========== */
 .post-footer {
-  background-color: #636b73;
+  background-color: #0f2c33;
   color: #fff;
-  padding: 13px 0;
+  padding: 8px 0;
 }
 
 .post-footer-content {
@@ -353,3 +377,4 @@ body {
     margin: 13px auto;
   }
 }
+
