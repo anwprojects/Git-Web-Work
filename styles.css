@@ -15,7 +15,6 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5em;
-  /*color: #222;*/
 }
 
 /* Container with max width */
@@ -70,12 +69,13 @@ body {
 }
 
 .hero-content h1 {
-  font-family: 'Jost', sans-serif !important;
+  /*font-family: 'Jost', sans-serif !important;*/
+  font-family: 'Lilita One', cursive !important;
   color: #292929;
   font-size: 30px;
-  line-height: 1.2em;
+  line-height: 1em;
   margin-bottom: 13px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .sm-title {
@@ -160,12 +160,12 @@ body {
 }
 
 .parallax-text h2 {
-  font-family: 'Just Another Hand', cursive;
-  letter-spacing: 1px;
-  font-size: 54px;
-  line-height: 0.5em;
+  font-family: 'Lilita One', cursive;
+  letter-spacing: -0.5px;
+  font-size: 50px;
+  line-height: 1em;
   margin-bottom: 24px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .sub-title {
@@ -288,6 +288,10 @@ h4 {
 }
 
 .download-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #fff;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 21px;
@@ -295,13 +299,13 @@ h4 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 21px; /* space between heading and button */
+  gap: 18px; /* space between heading and button */
 }
 
 .download-content h3 {
   font-size: 25px;
   line-height: 30px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
@@ -323,6 +327,7 @@ h4 {
   background-color: #fff;
   color: #abca37;
   border: 1px solid #fff;
+  font-weight: bold;
 }
 
 /* ========== Post-Footer Section ========== */
